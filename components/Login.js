@@ -1,6 +1,6 @@
 import React from 'react';
-import { Button } from 'react-native';
-import { GoogleSignin } from '@react-native-community/google-signin';
+import {Button} from 'react-native';
+import {GoogleSignin} from '@react-native-community/google-signin';
 import auth from '@react-native-firebase/auth';
 
 GoogleSignin.configure({
@@ -8,21 +8,19 @@ GoogleSignin.configure({
 });
 
 async function onGoogleButtonPress() {
-  // Get the users ID token
-  const { idToken } = await GoogleSignin.signIn();
-
-  // Create a Google credential with the token
+  const {idToken} = await GoogleSignin.signIn();
   const googleCredential = auth.GoogleAuthProvider.credential(idToken);
 
-  // Sign-in the user with the credential
   return auth().signInWithCredential(googleCredential);
 }
 
-export default function GoogleSignIn() {
+export default function GoogleSignIn({navigation}) {
   return (
     <Button
       title="Google Sign-In"
-      onPress={() => onGoogleButtonPress().then(() => console.log('Signed in with Google!'))}
+      onPress={() =>
+        onGoogleButtonPress().then(() => navigation.navigate('Nawodnienie'))
+      }
     />
   );
 }
