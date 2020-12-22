@@ -7,25 +7,24 @@ import {
   TextInput,
   Button,
   TouchableOpacity,
-} from "react-native";
-import * as style from './style'; 
+} from 'react-native';
+// import * as style from './style';
 
 export default function WatterFill() {
-  const [watter, setWatter] = useState("");
- 
+  const [watter, setWatter] = useState('');
   return (
     <>
-    <View style={styles.container}>
-      <div className={[style.cartoon, style.hb, style.thin-border]}>
+      <View style={styles.container}>
+        {/* <div className={[style.cartoon, style.hb, style.thin-border]}>
         <div className={[style.water-lines, style.ha]}></div>
         <div className={[style.bottle, style.b, style.ha, style.hb]}></div>
         <div className={style.neck}></div>
         <div className={[style.cap, style.b, style.ha]}></div>
-      </div>
-      <TouchableOpacity style={styles.addWater}>
-        <Text style={styles.waterText}>Add water</Text>
-      </TouchableOpacity>
-    </View>
+      </div> */}
+        <TouchableOpacity style={styles.addWater}>
+          <Text style={styles.waterText}>Add water</Text>
+        </TouchableOpacity>
+      </View>
     </>
   );
 }

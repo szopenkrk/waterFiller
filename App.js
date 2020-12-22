@@ -7,14 +7,11 @@ import WaterFill from './components/WaterFill';
 
 const Stack = createStackNavigator();
 
-const MyStack = () => {
+export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen
-          name="Login"
-          component={Login}
-        />
+        <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Nawodnienie" component={WaterFill} />
       </Stack.Navigator>
     </NavigationContainer>
