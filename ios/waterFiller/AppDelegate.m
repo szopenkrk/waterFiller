@@ -5,6 +5,7 @@
 #import <React/RCTRootView.h>
 
 #ifdef FB_SONARKIT_ENABLED
+#import <Firebase.h>
 #import <FlipperKit/FlipperClient.h>
 #import <FlipperKitLayoutPlugin/FlipperKitLayoutPlugin.h>
 #import <FlipperKitUserDefaultsPlugin/FKUserDefaultsPlugin.h>
