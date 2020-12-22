@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:635667764813:android:a83875344e22674e64ae04",
+        "mobilesdk_app_id": "1:635667764813:android:aff3f99084b0b69f64ae04",
         "android_client_info": {
-          "package_name": "com.watter.filler.demo.android"
+          "package_name": "com.waterfiller"
         }
       },
       "oauth_client": [
