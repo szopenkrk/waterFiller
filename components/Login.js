@@ -4,7 +4,8 @@ import {GoogleSignin} from '@react-native-community/google-signin';
 import auth from '@react-native-firebase/auth';
 
 GoogleSignin.configure({
-  webClientId: '',
+  webClientId:
+    '635667764813-od7051jjhgm5s82hkil9c3c873ud2dr0.apps.googleusercontent.com',
 });
 
 async function onGoogleButtonPress() {
@@ -19,7 +20,13 @@ export default function GoogleSignIn({navigation}) {
     <Button
       title="Google Sign-In"
       onPress={() =>
-        onGoogleButtonPress().then(() => navigation.navigate('Nawodnienie'))
+        onGoogleButtonPress()
+          .then((data) => navigation.navigate('Nawodnienie', data))
+          .catch((error) => {
+            navigation.navigate('Nawodnienie');
+            // eslint-disable-next-line no-alert
+            alert(error.message);
+          })
       }
     />
   );
