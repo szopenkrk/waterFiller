@@ -20,6 +20,7 @@
 		92471004D405194258CC1228 /* libPods-waterFiller-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 540649B267825BD2AD598A0A /* libPods-waterFiller-tvOSTests.a */; };
 		A9C495185342A6DB3DED76CC /* libPods-waterFiller.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE4E6097AF83F1191BC372E /* libPods-waterFiller.a */; };
 		AF8F6F2EADED470239F24440 /* libPods-waterFiller-waterFillerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D45794595D9AD92F6E1019E /* libPods-waterFiller-waterFillerTests.a */; };
+		F4707160259217D4003A4C71 /* libRNGoogleSignin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F470715F259217D4003A4C71 /* libRNGoogleSignin.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		EA92DF8E4950BE77174BB823 /* Pods-waterFiller.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-waterFiller.release.xcconfig"; path = "Target Support Files/Pods-waterFiller/Pods-waterFiller.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		F470715F259217D4003A4C71 /* libRNGoogleSignin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRNGoogleSignin.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB62845622EAC4A197A8FD5F /* Pods-waterFiller-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-waterFiller-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-waterFiller-tvOSTests/Pods-waterFiller-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4707160259217D4003A4C71 /* libRNGoogleSignin.a in Frameworks */,
 				A9C495185342A6DB3DED76CC /* libPods-waterFiller.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +142,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F470715F259217D4003A4C71 /* libRNGoogleSignin.a */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				6FE4E6097AF83F1191BC372E /* libPods-waterFiller.a */,
@@ -161,7 +165,6 @@
 				4FFD8DA4C2CC033D2EBD1A53 /* Pods-waterFiller-waterFillerTests.debug.xcconfig */,
 				6AB7710D6BD6D0B95A92C19E /* Pods-waterFiller-waterFillerTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -442,10 +445,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-waterFiller/Pods-waterFiller-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,10 +487,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-waterFiller-waterFillerTests/Pods-waterFiller-waterFillerTests-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

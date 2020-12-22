@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "635667764813",
+    "project_id": "water-filler",
+    "storage_bucket": "water-filler.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:635667764813:android:a83875344e22674e64ae04",
+        "android_client_info": {
+          "package_name": "com.watter.filler.demo.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "635667764813-od7051jjhgm5s82hkil9c3c873ud2dr0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANrV4vU-1_fi_S8-j64cDuu4TLduOVuzs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "635667764813-od7051jjhgm5s82hkil9c3c873ud2dr0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "635667764813-129637ehum973bt59vs9ka35f3tgn7l0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "water-fill-demo"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
